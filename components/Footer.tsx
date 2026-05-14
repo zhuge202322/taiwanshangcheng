@@ -48,11 +48,20 @@ export default function Footer() {
         </div>
 
         <div>
-          <a href="#" className="inline-flex items-center gap-2 bg-[#06C755] text-white font-medium px-6 py-3 rounded-md">
+          <a
+            href="https://lin.ee/PjfZXiP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#05B14C] text-white font-medium px-6 py-3 rounded-md transition"
+          >
             <span className="font-bold">LINE</span> 加入好友
           </a>
-          <div className="mt-4 w-36 h-36 bg-white border grid place-items-center text-xs text-ink-soft rounded">
-            QR Code
+          <div className="mt-4 w-36 h-36 bg-white border rounded overflow-hidden">
+            <img
+              src="/img/line.png"
+              alt="LINE 官方帳號 QR Code"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       </div>

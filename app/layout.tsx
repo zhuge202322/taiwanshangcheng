@@ -3,6 +3,7 @@ import './globals.css';
 import PromoBar from '@/components/PromoBar';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LineFloatButton from '@/components/LineFloatButton';
 
 export const metadata: Metadata = {
   title: '配方時代｜研究證實的有效配方',
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <LineFloatButton />
       </body>
     </html>
   );
