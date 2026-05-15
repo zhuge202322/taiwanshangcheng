@@ -1,0 +1,87 @@
+name: taiwanshangcheng
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tsc-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    # 内部网络访问；如需主机直连改成 "5434:5432"
+    expose:
+      - "5432"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tsc-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      APP_ENV: dev   # 保留 dev：自动建表 + 关闭邮箱验证
+      PORT: 7010
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_SCHEMA: public
+      COOKIE_SECRET: ${COOKIE_SECRET}
+      SUPERADMIN_USERNAME: ${SUPERADMIN_USERNAME:-superadmin}
+      SUPERADMIN_PASSWORD: ${SUPERADMIN_PASSWORD:-superadmin}
+      FRONTEND_ORIGINS: ${FRONTEND_ORIGINS}
+    volumes:
+      # 上传的产品图与邮件预览持久化到宿主机
+      - ./backend/static/assets:/app/static/assets
+      - ./backend/static/email:/app/static/email
+    expose:
+      - "7010"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tsc-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      NODE_ENV: production
+      # 浏览器端调用：用站点公开域名
+      NEXT_PUBLIC_VENDURE_SHOP_API_URL: ${NEXT_PUBLIC_VENDURE_SHOP_API_URL}
+      # SSR 调用：走容器内部网络，免走外网
+      VENDURE_SHOP_API_URL: http://backend:7010/shop-api
+    expose:
+      - "3000"
+
+  nginx:
+    image: jonasal/nginx-certbot:5.4.1
+    container_name: tsc-nginx
+    restart: unless-stopped
+    depends_on:
+      - frontend
+      - backend
+    environment:
+      CERTBOT_EMAIL: ${CERTBOT_EMAIL}
+      # 证书自动续期；测试环境可改为 1 避免速率限制
+      STAGING: ${LETSENCRYPT_STAGING:-0}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/user_conf.d:/etc/nginx/user_conf.d:ro
+      - ./certbot/letsencrypt:/etc/letsencrypt
+      # 后端上传的产品图通过 nginx /assets 直接给浏览器
+      - ./backend/static/assets:/var/www/assets:ro

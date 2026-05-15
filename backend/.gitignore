@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+*.log
+
+# 只忽略运行时邮件预览，保留 static/assets（产品图随仓库一起部署）
+static/email/test-emails/
+static/cache/

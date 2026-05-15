@@ -10,15 +10,6 @@ const aboutLinks = [
   { href: '/affordable', label: '為何我們價格這麼實惠？' }
 ];
 
-const news = [
-  '2025 雙12得獎名單公告',
-  '2025 狂歡週年慶得獎名單公告',
-  '2025 父親節得獎名單公告',
-  '2025 熱銷感謝祭得獎名單公告',
-  '2025 母親節得獎名單公告',
-  '仿冒品宣導聲明'
-];
-
 export default function Footer() {
   return (
     <footer className="bg-cream border-t border-gray-100">
@@ -33,16 +24,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <div className="border-l-4 border-brand-bright pl-3 mb-4 font-medium text-ink-dark">最新消息</div>
-          <ul className="space-y-2">
-            {news.map(n => <li key={n} className="hover:text-brand-blue cursor-pointer">{n}</li>)}
-          </ul>
-          <div className="mt-6 border-l-4 border-brand-bright pl-3 mb-3 font-medium text-ink-dark">優質成分股份有限公司</div>
+          <div className="border-l-4 border-brand-bright pl-3 mb-3 font-medium text-ink-dark">萃活世家股份有限公司</div>
           <ul className="space-y-1 text-xs">
-            <li>電話 / 02-2736-0322</li>
             <li>時間 / 周一至周五 10:00-12:00 | 14:00-17:00</li>
-            <li>地址 / 台北市大安區信義路4段279號6樓之一</li>
-            <li>信箱 / <a className="text-brand-blue" href="mailto:service@healthformula.com.tw">service@healthformula.com.tw</a></li>
+            <li>地址 / 台北市松山區八德路三段73巷27號</li>
             <li>產品已投保／國泰千萬產品責任險</li>
           </ul>
         </div>
@@ -66,7 +51,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-gray-200 py-4 text-center text-xs text-ink-soft">
-        © Copyright - 配方時代 <br />
+        © Copyright - 萃活世家 <br />
         本公司聘任天羅和永國際商務法律事務所
       </div>
     </footer>

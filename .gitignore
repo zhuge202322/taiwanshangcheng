@@ -1,5 +1,26 @@
-node_modules
-.next
-out
-.env*
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.*
+!.env.example
 .DS_Store
+*.log
+npm-debug.log*
+
+# Vendure 后端产物 / 上传 / 邮件预览（运行时数据，应通过 volume 持久化，不入仓）
+backend/dist/
+backend/static/email/test-emails/
+
+# 设计稿原始大图（可选：如果你想推送注释掉下行）
+chanpin/
+
+# certbot
+certbot/
+
+# nginx 生成的配置（保留模板，忽略生成产物）
+nginx/user_conf.d/
+
+# DB / Docker 数据
+postgres-data/

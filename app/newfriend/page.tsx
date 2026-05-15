@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ChevronRight, Star } from 'lucide-react';
 
-export const metadata = { title: '推薦好友優惠 - 配方時代' };
+export const metadata = { title: '推薦好友優惠 - 萃活世家' };
 
 const Bullet = ({ children, color = 'border-brand-bright' }: { children: React.ReactNode; color?: string }) => (
   <div className={`border-l-4 ${color} pl-3 mt-6 mb-3 font-medium text-ink-dark`}>{children}</div>
@@ -34,10 +34,10 @@ export default function NewFriendPage() {
       <section className="bg-white pb-2">
         <div className="container-x max-w-3xl text-ink-mid leading-8 space-y-4">
           <p>
-            <strong className="text-ink-dark">【配方時代】</strong>致力於研發最有感的產品，並秉持三大承諾<strong className="text-brand-bright">『強效配方、劑量充足、價格實惠』</strong>
+            <strong className="text-ink-dark">【萃活世家】</strong>致力於研發最有感的產品，並秉持三大承諾<strong className="text-brand-bright">『強效配方、劑量充足、價格實惠』</strong>
           </p>
           <p>
-            現在，誠摯邀請你成為我們的<strong className="text-ink-dark">品牌好友</strong>，將這份承諾傳遞出去，與好友分享你對【配方時代】的喜愛，一起感受這份良好的體驗。
+            現在，誠摯邀請你成為我們的<strong className="text-ink-dark">品牌好友</strong>，將這份承諾傳遞出去，與好友分享你對【萃活世家】的喜愛，一起感受這份良好的體驗。
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function NewFriendPage() {
           <p className="mt-3 text-ink-mid">
             <Star className="inline text-amber-400 mb-1" size={16} fill="currentColor" /> 搭配加入 LINE 享折扣碼 50 元，<strong className="text-promo">最多可現折 100 元</strong>！
           </p>
-          <p className="mt-2 text-xs text-ink-soft">＊配方時代 擁有活動解釋權</p>
+          <p className="mt-2 text-xs text-ink-soft">＊萃活世家 擁有活動解釋權</p>
         </div>
       </section>
 
@@ -74,7 +74,7 @@ export default function NewFriendPage() {
               不用<span className="text-promo">5</span>分鐘！推薦朋友 ⏱
             </div>
             <div className="mt-4 text-2xl md:text-3xl text-brand-blue">
-              一起成為配方時代的品牌好友
+              一起成為萃活世家的品牌好友
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ export default function NewFriendPage() {
 
           <p className="mt-6 text-xs text-ink-soft text-center">
             ＊消費滿 1500 元可使用購物金，結帳時系統會自動套用<br />
-            ＊配方時代 擁有活動解釋權
+            ＊萃活世家 擁有活動解釋權
           </p>
 
           <div className="mt-8 text-center">

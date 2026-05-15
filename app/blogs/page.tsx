@@ -1,6 +1,6 @@
 import PageHero from '@/components/PageHero';
 
-export const metadata = { title: '保健專欄 - 配方時代' };
+export const metadata = { title: '保健專欄 - 萃活世家' };
 
 const posts = Array.from({ length: 9 }).map((_, i) => ({
   title: [

@@ -1,8 +1,8 @@
 const media = [
   { name: 'PChome 新聞', text: '減少了通路抽成和行銷費用，真正回饋到「強效保健」產品上' },
-  { name: 'Yahoo! 新聞', text: '知名保健品牌「配方時代」突破市場，主打研究文獻支持的足量配方' },
+  { name: 'Yahoo! 新聞', text: '知名保健品牌「萃活世家」突破市場，主打研究文獻支持的足量配方' },
   { name: 'YamNews', text: '在 Monde Selection 評鑑中榮獲品質金牌，成分安全性檢驗皆通過' },
-  { name: '中時新聞網', text: '配方時代寄得食品界奧斯卡最高榮譽，肯定其品質與配方科學性' }
+  { name: '中時新聞網', text: '萃活世家寄得食品界奧斯卡最高榮譽，肯定其品質與配方科學性' }
 ];
 export default function Media() {
   return (

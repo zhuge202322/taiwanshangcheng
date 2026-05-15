@@ -2,7 +2,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { ChevronDown, ShoppingCart, Menu, X } from 'lucide-react';
-import { products } from '@/lib/products';
+import { useCart } from './CartProvider';
+import { useAuth } from './AuthProvider';
+import { User } from 'lucide-react';
+
+type ProductLink = { slug: string; name: string };
 
 const aboutLinks = [
   { href: '/', label: '品牌介紹' },
@@ -13,16 +17,19 @@ const aboutLinks = [
   { href: '/affordable', label: '為何我們價格這麼實惠？' }
 ];
 
-export default function Header() {
+export default function Header({ productLinks = [] }: { productLinks?: ProductLink[] }) {
   const [mobile, setMobile] = useState(false);
   const [openAbout, setOpenAbout] = useState(false);
   const [openProducts, setOpenProducts] = useState(false);
+  const { order } = useCart();
+  const cartCount = order?.totalQuantity || 0;
+  const { user } = useAuth();
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-40">
       <div className="container-x flex items-center justify-between h-16">
         <Link href="/" className="text-xl md:text-2xl font-medium text-brand-navy tracking-widest">
-          配方時代
+          萃活世家
         </Link>
 
         <nav className="hidden lg:flex items-center gap-6 text-sm text-ink-mid">
@@ -67,7 +74,7 @@ export default function Header() {
                   <Link href="/allproduct" className="block px-4 py-2 font-medium text-brand-blue border-b">
                     全部產品
                   </Link>
-                  {products.map(p => (
+                  {productLinks.map(p => (
                     <Link key={p.slug} href={`/products/${p.slug}`} className="block px-4 py-2 text-sm hover:bg-cream hover:text-brand-blue">
                       {p.name}
                     </Link>
@@ -77,10 +84,24 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/cart" className="flex items-center gap-1 hover:text-brand-blue">
+          <Link href="/cart" className="relative flex items-center gap-1 hover:text-brand-blue">
             <ShoppingCart size={18} /> 購物車
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-3 min-w-[18px] h-[18px] px-1 rounded-full bg-promo text-white text-[11px] leading-[18px] text-center font-medium">
+                {cartCount}
+              </span>
+            )}
           </Link>
           <Link href="/newfriend" className="hover:text-brand-blue">推薦好友優惠</Link>
+          {user ? (
+            <Link href="/account" className="flex items-center gap-1 hover:text-brand-blue">
+              <User size={16} /> 個人中心
+            </Link>
+          ) : (
+            <Link href="/login" className="flex items-center gap-1 hover:text-brand-blue">
+              <User size={16} /> 登入
+            </Link>
+          )}
         </nav>
 
         <button className="lg:hidden text-ink-dark" onClick={() => setMobile(true)}>
@@ -91,7 +112,7 @@ export default function Header() {
       {mobile && (
         <div className="fixed inset-0 z-50 bg-white overflow-y-auto">
           <div className="container-x flex items-center justify-between h-16 border-b">
-            <span className="text-xl font-medium text-brand-navy">配方時代</span>
+            <span className="text-xl font-medium text-brand-navy">萃活世家</span>
             <button onClick={() => setMobile(false)}><X size={24} /></button>
           </div>
           <div className="container-x py-4 space-y-4 text-ink-dark">
@@ -111,13 +132,20 @@ export default function Header() {
               <div className="font-medium text-brand-navy mb-2">所有產品</div>
               <div className="pl-3 space-y-2">
                 <Link href="/allproduct" className="block text-sm text-brand-blue" onClick={() => setMobile(false)}>全部產品</Link>
-                {products.map(p => (
+                {productLinks.map(p => (
                   <Link key={p.slug} href={`/products/${p.slug}`} className="block text-sm" onClick={() => setMobile(false)}>{p.name}</Link>
                 ))}
               </div>
             </div>
             <Link href="/newfriend" className="block" onClick={() => setMobile(false)}>推薦好友優惠</Link>
-            <Link href="/cart" className="block" onClick={() => setMobile(false)}>購物車</Link>
+            <Link href="/cart" className="block" onClick={() => setMobile(false)}>
+              購物車 {cartCount > 0 && <span className="ml-1 inline-block bg-promo text-white text-xs px-2 py-0.5 rounded-full">{cartCount}</span>}
+            </Link>
+            {user ? (
+              <Link href="/account" className="block" onClick={() => setMobile(false)}>個人中心</Link>
+            ) : (
+              <Link href="/login" className="block" onClick={() => setMobile(false)}>登入 / 註冊</Link>
+            )}
           </div>
         </div>
       )}

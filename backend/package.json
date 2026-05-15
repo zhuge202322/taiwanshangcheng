@@ -1,0 +1,35 @@
+{
+  "name": "taiwanshangcheng-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vendure backend for 配方時代 storefront",
+  "scripts": {
+    "dev:server": "ts-node ./src/index.ts",
+    "dev:worker": "ts-node ./src/index-worker.ts",
+    "dev": "concurrently npm:dev:*",
+    "build": "tsc",
+    "start:server": "node ./dist/index.js",
+    "start:worker": "node ./dist/index-worker.js",
+    "start": "concurrently npm:start:*",
+    "migration:generate": "ts-node migration generate",
+    "migration:run": "ts-node migration run",
+    "migration:revert": "ts-node migration revert",
+    "import:products": "ts-node ./scripts/import-products.ts",
+    "setup:shop": "ts-node ./scripts/setup-shop.ts"
+  },
+  "dependencies": {
+    "@vendure/admin-ui-plugin": "3.6.3",
+    "@vendure/asset-server-plugin": "3.6.3",
+    "@vendure/core": "3.6.3",
+    "@vendure/email-plugin": "3.6.3",
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "16.4.5",
+    "pg": "8.13.1",
+    "typescript": "5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "concurrently": "8.2.2",
+    "ts-node": "10.9.2"
+  }
+}

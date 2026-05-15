@@ -1,10 +1,11 @@
 import PageHero from '@/components/PageHero';
-import { products } from '@/lib/products';
+import { fetchProducts } from '@/lib/vendure';
 import ProductCard from '@/components/ProductCard';
 
-export const metadata = { title: '寵愛母親節 100% 中獎 - 配方時代' };
+export const metadata = { title: '寵愛母親節 100% 中獎 - 萃活世家' };
 
-export default function MothersDayPage() {
+export default async function MothersDayPage() {
+  const products = await fetchProducts();
   return (
     <>
       <section className="bg-gradient-to-br from-pink-200 via-rose-100 to-pink-300 py-16 text-center">

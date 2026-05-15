@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { products } from '@/lib/products';
+import { fetchProducts } from '@/lib/vendure';
 import ProductCard from '@/components/ProductCard';
 
-export default function ProductGrid() {
+export default async function ProductGrid() {
+  const products = await fetchProducts();
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="container-x">

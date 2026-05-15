@@ -23,7 +23,7 @@ export default function UserShowcase() {
         </h2>
         <div className="section-title-underline" />
         <p className="mt-3 text-center text-ink-mid">
-          看看正在使用配方時代的朋友們
+          看看正在使用萃活世家的朋友們
         </p>
       </div>
 

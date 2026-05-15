@@ -27,7 +27,7 @@ export default function ThreePromises() {
     <section className="py-16 md:py-24 gradient-soft relative overflow-hidden">
       <div className="container-x relative">
         <h2 className="section-title">
-          配方時代團隊<br className="md:hidden" />
+          萃活世家團隊<br className="md:hidden" />
           <span className="md:ml-3">給消費者的三大承諾</span>
         </h2>
         <div className="section-title-underline" />

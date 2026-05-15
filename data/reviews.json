@@ -1,0 +1,864 @@
+{
+  "probiotic-gut-30": [
+    {
+      "id": "probiotic-gut-30-1",
+      "author": "徐婉庭",
+      "rating": 5,
+      "content": "剛好搭上品牌在做活動，優惠下來價格更甜，已經揪同事們一起團購了，真的很超值",
+      "date": "2026-01-28",
+      "verified": true
+    },
+    {
+      "id": "probiotic-gut-30-2",
+      "author": "connie h.",
+      "rating": 5,
+      "content": "懷孕前就有開始注重腸道的保養，當時查到這款益生菌的成分單純，長期補充後也覺得很不錯",
+      "date": "2026-04-05",
+      "verified": true
+    },
+    {
+      "id": "probiotic-gut-30-3",
+      "author": "陳淑華",
+      "rating": 5,
+      "content": "最近在找益生菌，女兒剛好看到這款評價不錯，請她幫我下單兩包想吃看看",
+      "date": "2026-04-13",
+      "verified": true
+    },
+    {
+      "id": "probiotic-gut-30-4",
+      "author": "楊小原",
+      "rating": 5,
+      "content": "這款益生菌的成分單純，家人吃的回饋都不錯，現在母親節活動再來回購幾組",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "probiotic-gut-30-5",
+      "author": "宜萱",
+      "rating": 5,
+      "content": "食用方法和保存期限都標示的很清楚，效期都長達兩年以上，不用怕買太多優惠組合會吃不完",
+      "date": "2026-04-08",
+      "verified": true
+    }
+  ],
+  "cranberry-15": [
+    {
+      "id": "cranberry-15-1",
+      "author": "姚先生",
+      "rating": 5,
+      "content": "出差時，會直接把整包Ｂ群一起帶出門，放在工作的包包裡也不太佔空間，很方便",
+      "date": "2026-04-06",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-2",
+      "author": "陳孟君",
+      "rating": 5,
+      "content": "同事在討論日常飲食補充時，我有提到這款有添加鋅的B群產品給他們參考看看",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-3",
+      "author": "張庭瑜",
+      "rating": 5,
+      "content": "幫男友找到這款B群，他吃完2包竟然說蠻有感的，成就感十足🤭",
+      "date": "2026-04-14",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-4",
+      "author": "蔣清水",
+      "rating": 5,
+      "content": "看到家裡上次買的快吃完就來幫忙下單，有活動可以順便買大組數的優惠方案",
+      "date": "2026-03-26",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-5",
+      "author": "佳緒",
+      "rating": 5,
+      "content": "最近事情很多，有補充這款B群感覺狀態維持得不錯",
+      "date": "2026-05-08",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-6",
+      "author": "陳進平",
+      "rating": 5,
+      "content": "我已經習慣在每天早餐後補充，變成固定生活流程",
+      "date": "2026-04-26",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-7",
+      "author": "子惠",
+      "rating": 5,
+      "content": "朋友推薦給我的品牌，他之前是買魚油吃了覺得有感，我目前也是定期購入，這次有下單這款B群",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-8",
+      "author": "carter",
+      "rating": 5,
+      "content": "除了B群，還有添加鋅跟其他的複方，感覺補充起來更全面，很不錯喔",
+      "date": "2026-03-31",
+      "verified": true
+    },
+    {
+      "id": "cranberry-15-9",
+      "author": "陳家佑",
+      "rating": 5,
+      "content": "下單方式簡單快速，連不常上網買東西的我，也很容易上手，對品牌的印象很好",
+      "date": "2026-04-05",
+      "verified": true
+    }
+  ],
+  "uc2-30": [
+    {
+      "id": "uc2-30-1",
+      "author": "秋如",
+      "rating": 5,
+      "content": "產品標示清楚，資訊透明度高，讓人很安心",
+      "date": "2026-05-11",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-2",
+      "author": "Cathy",
+      "rating": 5,
+      "content": "目前習慣在睡前和其他保健品一起補充，比較不容易忘記",
+      "date": "2026-03-25",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-3",
+      "author": "淑華",
+      "rating": 5,
+      "content": "收到商品時外箱包裝得很好，裡面的產品也很完整",
+      "date": "2026-03-22",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-4",
+      "author": "jessica l.",
+      "rating": 5,
+      "content": "看到有人分享這款 UCII，後來看到成分還有加玻尿酸，就也想買來吃看看",
+      "date": "2026-04-24",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-5",
+      "author": "陳盈如",
+      "rating": 5,
+      "content": "本身胃不太好，客服有建議可以安排在飯後再吃，非常感謝",
+      "date": "2026-03-31",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-6",
+      "author": "蘇怡潔",
+      "rating": 5,
+      "content": "以前比較少注意這類產品，最近開始慢慢接觸，也覺得其實早點開始保養好像也不錯",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-7",
+      "author": "劉淑慧",
+      "rating": 5,
+      "content": "專利UC-II 搭配玻尿酸的複方設計很特別，還都有足量添加，真的是一顆就到位",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "uc2-30-8",
+      "author": "美怡",
+      "rating": 5,
+      "content": "出貨速度比預期快很多，昨天女兒才說幫我下單了，今天包裹就送達，感覺品牌服務效率很高很棒",
+      "date": "2026-04-13",
+      "verified": true
+    }
+  ],
+  "bittermelon-60": [
+    {
+      "id": "bittermelon-60-1",
+      "author": "莉玲",
+      "rating": 5,
+      "content": "如果平時也是很注重日常飲食保養，這款真的值得試試看喔！",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "bittermelon-60-2",
+      "author": "姵辰",
+      "rating": 5,
+      "content": "做了不少功課，對於第一次接觸苦瓜胜肽產品的人來說，我覺得算選對品牌了",
+      "date": "2026-05-11",
+      "verified": true
+    },
+    {
+      "id": "bittermelon-60-3",
+      "author": "林阿照",
+      "rating": 5,
+      "content": "現在慢慢配合飲食與習慣去調整，也要謝謝女兒幫我做功課找到這款產品",
+      "date": "2026-03-27",
+      "verified": true
+    },
+    {
+      "id": "bittermelon-60-4",
+      "author": "Lawrence",
+      "rating": 5,
+      "content": "我本身很怕保健食品有味道，這款倒是不會，家人也蠻能接受的",
+      "date": "2026-05-12",
+      "verified": true
+    },
+    {
+      "id": "bittermelon-60-5",
+      "author": "ariel l.",
+      "rating": 5,
+      "content": "就算是售後有產品不懂的地方，客服也都會耐心的回覆，謝謝辛苦了",
+      "date": "2026-04-29",
+      "verified": true
+    }
+  ],
+  "gaba-60": [
+    {
+      "id": "gaba-60-1",
+      "author": "alexhu",
+      "rating": 5,
+      "content": "這款是幫家中長輩準備的，最近看到很多人在分享GABA的相關產品，所以也想給家人試試看",
+      "date": "2026-03-26",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-2",
+      "author": "陳孟庭",
+      "rating": 5,
+      "content": "這次在官網訂購流程很順利，登入會員下單之後很快就收到出貨通知",
+      "date": "2026-03-19",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-3",
+      "author": "鄭安芝",
+      "rating": 5,
+      "content": "官網操作下單超簡單，不用填一堆個人資料，真的蠻方便的",
+      "date": "2026-01-23",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-4",
+      "author": "簡亭妤",
+      "rating": 5,
+      "content": "成分足量添加很有誠意，整體配方搭配也很棒，真的是很適合日常保養入手",
+      "date": "2026-01-26",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-5",
+      "author": "Cindy",
+      "rating": 5,
+      "content": "出貨速度真的很快，下單不到兩天就收到了，包裹送來時包裝完整，品牌的服務效率真的很高",
+      "date": "2026-04-24",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-6",
+      "author": "游佳樺",
+      "rating": 5,
+      "content": "上次買過一包，最近看到活動想再來訂一組",
+      "date": "2026-03-23",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-7",
+      "author": "王迅國",
+      "rating": 4,
+      "content": "本身有打多份工，休息時間比較不固定，但平常都會放隨身包內，趁著休息空檔隨餐吃",
+      "date": "2026-01-07",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-8",
+      "author": "曾麗芳",
+      "rating": 5,
+      "content": "原本以為官網下單會等很久，結果沒過兩天門市就通知我可以去取件了，出貨速度棒",
+      "date": "2026-04-26",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-9",
+      "author": "勝宗",
+      "rating": 5,
+      "content": "我自己覺得不錯，已經有推薦給不少朋友了",
+      "date": "2026-05-11",
+      "verified": true
+    },
+    {
+      "id": "gaba-60-10",
+      "author": "許月英",
+      "rating": 5,
+      "content": "之前有推薦給同事嘗試看看，他說都蠻固定有在吃的，看來他也很喜歡呢",
+      "date": "2026-04-13",
+      "verified": true
+    }
+  ],
+  "maca-30": [
+    {
+      "id": "maca-30-1",
+      "author": "陳小儒",
+      "rating": 5,
+      "content": "買到這款規格的瑪卡真的不後悔，成分搭配的很好，又都是足量添加",
+      "date": "2026-04-24",
+      "verified": true
+    },
+    {
+      "id": "maca-30-2",
+      "author": "林建良",
+      "rating": 5,
+      "content": "品牌在網路上的評價很好，加上整體形象很不錯，就想下單試試，果然都讓我很滿意",
+      "date": "2026-03-26",
+      "verified": true
+    },
+    {
+      "id": "maca-30-3",
+      "author": "潘俊豪",
+      "rating": 5,
+      "content": "身邊幾位同齡的同事，剛好也在找適合的男性保健食品，想說就推薦這款瑪卡給他們，蠻適合平常工作忙碌的人",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "maca-30-4",
+      "author": "jimmy",
+      "rating": 5,
+      "content": "粉包攜帶方便，平常會搭配飲料喝",
+      "date": "2026-04-26",
+      "verified": true
+    },
+    {
+      "id": "maca-30-5",
+      "author": "demilo",
+      "rating": 5,
+      "content": "粉包真的比其他一大罐裝的方便很多，尤其經常外出時差異很明顯",
+      "date": "2026-05-08",
+      "verified": true
+    },
+    {
+      "id": "maca-30-6",
+      "author": "柏志",
+      "rating": 5,
+      "content": "成分與有效期限都標示得很清楚，因為我平常比較會去留意食品相關資訊，都款產品可以吃得很安心",
+      "date": "2026-04-08",
+      "verified": true
+    }
+  ],
+  "royaljelly-60": [
+    {
+      "id": "royaljelly-60-1",
+      "author": "Sean L.",
+      "rating": 5,
+      "content": "謝謝女兒送我的禮物",
+      "date": "2025-11-05",
+      "verified": true
+    },
+    {
+      "id": "royaljelly-60-2",
+      "author": "黃湘芸",
+      "rating": 4,
+      "content": "也到了要加強保養的年紀，最近看到這款蜂王乳也打算吃看看",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "royaljelly-60-3",
+      "author": "季蓉",
+      "rating": 5,
+      "content": "早餐後補充兩顆已經成為我的保養小祕密了哈哈",
+      "date": "2026-01-07",
+      "verified": true
+    },
+    {
+      "id": "royaljelly-60-4",
+      "author": "Michelle",
+      "rating": 4,
+      "content": "不是想追求什麼立刻的變化，年紀慢慢變大，只是想讓自己走長久穩定的保養路，會持續吃再觀察看看",
+      "date": "2025-12-10",
+      "verified": true
+    },
+    {
+      "id": "royaljelly-60-5",
+      "author": "賴婉甄",
+      "rating": 5,
+      "content": "家人吃的蠻習慣的，這次又幫媽媽回購買4盒",
+      "date": "2026-01-28",
+      "verified": true
+    }
+  ],
+  "collagen-15": [
+    {
+      "id": "collagen-15-1",
+      "author": "廖怡鈞",
+      "rating": 5,
+      "content": "自己吃完有感後，也介紹給辦公室的同事一起吃，現在已經變成大家一起保養的習慣了",
+      "date": "2026-04-09",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-2",
+      "author": "徐絹惠",
+      "rating": 5,
+      "content": "認真吃了一個月，自己看不出差異，但身邊的朋友看我都說很有感🤣",
+      "date": "2026-04-05",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-3",
+      "author": "秀鳳",
+      "rating": 5,
+      "content": "味道是淡淡的果香，吃的時候也不會有其他味道，這點我很在意，也是我最後選擇買這款膠原蛋白的原因",
+      "date": "2026-03-27",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-4",
+      "author": "曾芬蘭",
+      "rating": 5,
+      "content": "每次吃的時候會多配點水，長期吃且習慣後反而喝水的頻率也跟著變高了",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-5",
+      "author": "蔡宛庭",
+      "rating": 5,
+      "content": "以前膠原蛋白都是看品牌大就買，這次認真看到這款很喜歡，想要來試試看",
+      "date": "2026-03-23",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-6",
+      "author": "phoebe",
+      "rating": 5,
+      "content": "這款除了膠原蛋白還有加維他命C，補充起來更全面，對保養懶人的我來說，相當友善",
+      "date": "2026-04-08",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-7",
+      "author": "徐藝珊",
+      "rating": 5,
+      "content": "開始吃之前本來以為保養會很麻煩，結果其實很簡單，只要方便食用就能持續下去",
+      "date": "2026-03-22",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-8",
+      "author": "佳玲",
+      "rating": 5,
+      "content": "這次回購發貨一樣很快餒，果然值得長期回購支持",
+      "date": "2026-04-24",
+      "verified": true
+    },
+    {
+      "id": "collagen-15-9",
+      "author": "claire c.",
+      "rating": 5,
+      "content": "持續吃一段時間了，感覺對於養顏需求真的蠻有感的",
+      "date": "2026-04-26",
+      "verified": true
+    }
+  ],
+  "calcium-45": [
+    {
+      "id": "calcium-45-1",
+      "author": "cheslite",
+      "rating": 5,
+      "content": "身為長期支持的客人，會不斷回購就是對品牌的肯定，每次都會跟著優惠活動一起下單",
+      "date": "2026-03-23",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-2",
+      "author": "亞欣",
+      "rating": 5,
+      "content": "已經吃了一陣子，發現比起先前吃的鈣片，這款更溫和，成分搭配也更全面呢",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-3",
+      "author": "陳玉玟",
+      "rating": 5,
+      "content": "成分來源天然，又是素食者可食，我也有介紹給好幾位朋友了",
+      "date": "2026-03-26",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-4",
+      "author": "郭雅青",
+      "rating": 5,
+      "content": "因為生活習慣不規律，飲食也不均衡，有開始補充一些保健品，這款是朋友推薦的，吃起來不錯，膠囊也不會很大顆喔",
+      "date": "2026-03-17",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-5",
+      "author": "伯勳",
+      "rating": 5,
+      "content": "回購這麼多次，品質依然維持不錯，是目前最放心的品牌之一",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-6",
+      "author": "Murielle",
+      "rating": 5,
+      "content": "本身不太會吞膠囊，但這款的大小剛好，這點真的讓我方便很多也很滿意",
+      "date": "2026-03-27",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-7",
+      "author": "蔡子莛",
+      "rating": 5,
+      "content": "找補鈣的產品最怕吸收率低，這款天然的海藻鈣看起來還不錯",
+      "date": "2026-01-28",
+      "verified": true
+    },
+    {
+      "id": "calcium-45-8",
+      "author": "惠敏",
+      "rating": 5,
+      "content": "有試過其他品牌的鈣片，感覺這款更溫和，目前覺得很OK，會再觀察看看",
+      "date": "2026-03-18",
+      "verified": true
+    }
+  ],
+  "probiotic-allergy-30": [
+    {
+      "id": "probiotic-allergy-30-1",
+      "author": "賴璿",
+      "rating": 5,
+      "content": "已經購買吃好長一段時間，對這款舒敏益生菌的表現非常肯定，之後也是會繼續支持回購",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "probiotic-allergy-30-2",
+      "author": "晴雯",
+      "rating": 5,
+      "content": "本身不太會吞膠囊，這款做成粉包的方式很方便吃",
+      "date": "2026-04-21",
+      "verified": true
+    },
+    {
+      "id": "probiotic-allergy-30-3",
+      "author": "陳育豪",
+      "rating": 4,
+      "content": "覺得是需要時間累積的產品，慢慢觀察會比較有感",
+      "date": "2026-05-08",
+      "verified": true
+    },
+    {
+      "id": "probiotic-allergy-30-4",
+      "author": "宜臻",
+      "rating": 5,
+      "content": "這款益生菌的粉包設計我蠻喜歡的，小小一包很方便，外出放在包包裡也不占空間，隨時都可以補充",
+      "date": "2026-03-18",
+      "verified": true
+    },
+    {
+      "id": "probiotic-allergy-30-5",
+      "author": "沛晴",
+      "rating": 5,
+      "content": "找到一款適合自己日常保養的益生菌，其實還蠻開心的",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "probiotic-allergy-30-6",
+      "author": "江佩倫",
+      "rating": 5,
+      "content": "自從第一盒吃完之後就有持續回購，目前已經固定在補充這款益生菌",
+      "date": "2026-03-31",
+      "verified": true
+    }
+  ],
+  "vitc-q10-30": [
+    {
+      "id": "vitc-q10-30-1",
+      "author": "蔣清水",
+      "rating": 5,
+      "content": "看到家裡上次買的快吃完就來幫忙下單，有活動可以順便買大組數的優惠方案",
+      "date": "2026-03-26",
+      "verified": true
+    },
+    {
+      "id": "vitc-q10-30-2",
+      "author": "佳葳",
+      "rating": 5,
+      "content": "感覺對於增強體力的幫助不錯，目前已經吃兩個月了，持續補充中，很滿意",
+      "date": "2026-04-09",
+      "verified": true
+    },
+    {
+      "id": "vitc-q10-30-3",
+      "author": "陳倍綾",
+      "rating": 5,
+      "content": "膠囊大小可以接受，整體外觀也很簡潔，選用夾鏈袋這點很便利",
+      "date": "2026-03-23",
+      "verified": true
+    },
+    {
+      "id": "vitc-q10-30-4",
+      "author": "冠霖",
+      "rating": 4,
+      "content": "一包的份量剛好，使用週期很明確，有符合我的需求",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "vitc-q10-30-5",
+      "author": "陳孟君",
+      "rating": 5,
+      "content": "同事在討論日常飲食補充時，我有提到這款有添加鋅的B群產品給他們參考看看",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "vitc-q10-30-6",
+      "author": "謝意雯",
+      "rating": 5,
+      "content": "通常會安排在早餐後吃，搭配日常作息一起使用，時間久就變成一種習慣了",
+      "date": "2026-05-11",
+      "verified": true
+    }
+  ],
+  "vitb-zn-60": [
+    {
+      "id": "vitb-zn-60-1",
+      "author": "陳孟君",
+      "rating": 5,
+      "content": "同事在討論日常飲食補充時，我有提到這款有添加鋅的B群產品給他們參考看看",
+      "date": "2026-03-24",
+      "verified": true
+    },
+    {
+      "id": "vitb-zn-60-2",
+      "author": "姚先生",
+      "rating": 5,
+      "content": "出差時，會直接把整包Ｂ群一起帶出門，放在工作的包包裡也不太佔空間，很方便",
+      "date": "2026-04-06",
+      "verified": true
+    },
+    {
+      "id": "vitb-zn-60-3",
+      "author": "陳家佑",
+      "rating": 5,
+      "content": "下單方式簡單快速，連不常上網買東西的我，也很容易上手，對品牌的印象很好",
+      "date": "2026-04-05",
+      "verified": true
+    },
+    {
+      "id": "vitb-zn-60-4",
+      "author": "Kong W.",
+      "rating": 5,
+      "content": "一包剛好可以吃一個月，夾鏈袋設計真的也太實用了",
+      "date": "2026-04-21",
+      "verified": true
+    },
+    {
+      "id": "vitb-zn-60-5",
+      "author": "冠霖",
+      "rating": 4,
+      "content": "一包的份量剛好，使用週期很明確，有符合我的需求",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "vitb-zn-60-6",
+      "author": "張庭瑜",
+      "rating": 5,
+      "content": "幫男友找到這款B群，他吃完2包竟然說蠻有感的，成就感十足🤭",
+      "date": "2026-04-14",
+      "verified": true
+    }
+  ],
+  "vitb-fe-60": [
+    {
+      "id": "vitb-fe-60-1",
+      "author": "淑薇",
+      "rating": 5,
+      "content": "第一次嘗試網路購買，如果有感，也會想推薦給其他親朋好友",
+      "date": "2026-03-25",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-2",
+      "author": "純華",
+      "rating": 5,
+      "content": "常常要在外面跑和找客戶，所以要補充的話，那種罐裝的也不太方便，這款的包裝設計讓保養變得容易多了",
+      "date": "2026-03-26",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-3",
+      "author": "孟菁",
+      "rating": 5,
+      "content": "使用後整體感覺還不錯，會持續觀察",
+      "date": "2026-05-12",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-4",
+      "author": "鄭小惠",
+      "rating": 5,
+      "content": "感覺平常都吃外食營養不太均衡，所以買這款B群做基礎的補充",
+      "date": "2026-04-08",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-5",
+      "author": "周小姐",
+      "rating": 5,
+      "content": "這款B群+鐵的設計對女性保養很友善，因為我個人就有補鐵的需求",
+      "date": "2026-04-09",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-6",
+      "author": "siuyun",
+      "rating": 5,
+      "content": "價格親民，跟活動又有優惠，已經第3次回購了，CP值很高！",
+      "date": "2026-04-12",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-7",
+      "author": "亞蕾",
+      "rating": 5,
+      "content": "B群額外添加足量的鐵，對女生來說根本超方便！",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-8",
+      "author": "butterfly",
+      "rating": 4,
+      "content": "剛開始補充而已，保健食品要定期補充才會比較有感",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "vitb-fe-60-9",
+      "author": "白淑惠",
+      "rating": 5,
+      "content": "這款B群+鐵真的很適合女性保養食用，價格也很親民，CP值整個超高！",
+      "date": "2026-03-27",
+      "verified": true
+    }
+  ],
+  "lutein-30": [
+    {
+      "id": "lutein-30-1",
+      "author": "Evelyn",
+      "rating": 5,
+      "content": "袋裝的設計放公司辦公桌上剛剛好，天天上班時才會記得吃",
+      "date": "2026-04-05",
+      "verified": true
+    },
+    {
+      "id": "lutein-30-2",
+      "author": "宥昕",
+      "rating": 5,
+      "content": "這次因為要出國，有臨時聯絡客服詢問配送狀況，客服很快就幫我查好，態度也很客氣📞",
+      "date": "2026-03-04",
+      "verified": true
+    },
+    {
+      "id": "lutein-30-3",
+      "author": "陳惠玲",
+      "rating": 5,
+      "content": "產品的效期很長，可以一次買大組數的份量，不用頻繁訂購，是能讓人很安心的選擇",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "lutein-30-4",
+      "author": "黃小萍",
+      "rating": 5,
+      "content": "平常都是上班日的午飯後吃一顆，順便拍照記錄督促自己要認真吃！",
+      "date": "2026-03-17",
+      "verified": true
+    },
+    {
+      "id": "lutein-30-5",
+      "author": "kitty67",
+      "rating": 5,
+      "content": "目前已經聽客服說明減量成1顆保養食用，感覺也維持得很不錯呢！",
+      "date": "2026-04-24",
+      "verified": true
+    }
+  ],
+  "fishoil-60": [
+    {
+      "id": "fishoil-60-1",
+      "author": "楊珮宜",
+      "rating": 5,
+      "content": "買營養品最重要的就是數據標示要透明，購買前有詢問過魚的來源和成分劑量，客服都回覆的很詳細，讓我對品牌有加分",
+      "date": "2026-04-29",
+      "verified": true
+    },
+    {
+      "id": "fishoil-60-2",
+      "author": "chloe y.",
+      "rating": 5,
+      "content": "85%高濃度配方，吃起來也真的沒有什麼味道，很小粒又好補充，連小朋友都可以接受，好感動",
+      "date": "2026-04-14",
+      "verified": true
+    },
+    {
+      "id": "fishoil-60-3",
+      "author": "珮雯",
+      "rating": 5,
+      "content": "感謝快速安排出貨～爸媽最近很需要開始補充魚油",
+      "date": "2026-03-25",
+      "verified": true
+    },
+    {
+      "id": "fishoil-60-4",
+      "author": "陳彥羽",
+      "rating": 5,
+      "content": "運動後會注意一些營養補充，所以開始找魚油產品試試，這款目前吃起來沒有負擔，小粒又好吞",
+      "date": "2026-03-30",
+      "verified": true
+    },
+    {
+      "id": "fishoil-60-5",
+      "author": "林秋宏",
+      "rating": 5,
+      "content": "長期外食族，開始補充魚油後，至少在日常保養上多一份基礎補充",
+      "date": "2026-05-08",
+      "verified": true
+    },
+    {
+      "id": "fishoil-60-6",
+      "author": "嘉嘉",
+      "rating": 5,
+      "content": "醫師有建議我要多補充魚油，這款是身邊蠻多朋友有推的，想來試試看",
+      "date": "2026-04-24",
+      "verified": true
+    },
+    {
+      "id": "fishoil-60-7",
+      "author": "meijan",
+      "rating": 4,
+      "content": "網路上研究很久，後來看到這款魚油評價不錯，加上又是高濃度、高劑量、小膠囊 ，決定先買4盒吃吃看",
+      "date": "2026-04-26",
+      "verified": true
+    }
+  ]
+}

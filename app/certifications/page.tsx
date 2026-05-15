@@ -3,7 +3,7 @@ import { CheckCircle2, ChevronRight, FlaskConical, Microscope, Globe } from 'luc
 import ProductNavGrid from '@/components/ProductNavGrid';
 import { productRefs, certReportsFor } from '@/lib/pageData';
 
-export const metadata = { title: '安心檢驗報告 - 配方時代' };
+export const metadata = { title: '安心檢驗報告 - 萃活世家' };
 
 const heroChecks = [
   ['5 項重金屬', '國際原料'],
@@ -26,7 +26,7 @@ export default function CertificationsPage() {
           <div className="bg-white rounded-3xl shadow-card overflow-hidden grid grid-cols-1 md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
               <h1 className="text-3xl md:text-5xl font-bold text-ink-dark tracking-wide">
-                配方時代 <span className="text-brand-bright">值得您信賴</span>
+                萃活世家 <span className="text-brand-bright">值得您信賴</span>
               </h1>
               <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-3 text-base md:text-lg text-ink-dark">
                 {heroChecks.flat().map((t) => (

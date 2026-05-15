@@ -1,22 +1,26 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Star, Check, ShieldCheck, Truck, Award } from 'lucide-react';
-import { products, getProductBySlug } from '@/lib/products';
+import { fetchProducts, fetchProductBySlug } from '@/lib/vendure';
 import ProductCard from '@/components/ProductCard';
+import ReviewSection from '@/components/ReviewSection';
+import AddToCartButton from '@/components/AddToCartButton';
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const products = await fetchProducts();
   return products.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const p = getProductBySlug(params.slug);
-  return { title: p ? `${p.name} - 配方時代` : '產品 - 配方時代' };
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const p = await fetchProductBySlug(params.slug);
+  return { title: p ? `${p.name} - 萃活世家` : '產品 - 萃活世家' };
 }
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const p = getProductBySlug(params.slug);
+export default async function ProductPage({ params }: { params: { slug: string } }) {
+  const p = await fetchProductBySlug(params.slug);
   if (!p) return notFound();
-  const related = products.filter((x) => x.slug !== p.slug).slice(0, 4);
+  const allProducts = await fetchProducts();
+  const related = allProducts.filter((x) => x.slug !== p.slug).slice(0, 4);
 
   return (
     <>
@@ -26,9 +30,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             <img src={p.image} alt={p.name} className="w-full aspect-square object-cover" />
           </div>
           <div>
-            <div className="text-brand-bright text-sm">{p.category}</div>
+            {p.category && <div className="text-brand-bright text-sm">{p.category}</div>}
             <h1 className="mt-2 text-2xl md:text-4xl font-medium text-brand-navy leading-snug">{p.name}</h1>
-            <p className="mt-2 text-ink-mid">{p.subtitle}</p>
+            {p.subtitle && <p className="mt-2 text-ink-mid">{p.subtitle}</p>}
 
             <div className="mt-4 flex items-center gap-3 text-sm">
               <div className="flex text-amber-400">
@@ -37,32 +41,33 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 ))}
               </div>
               <span>{p.rating}</span>
-              <span className="text-ink-soft">| {p.reviews} 則評價</span>
+              {p.reviews > 0 && <span className="text-ink-soft">| {p.reviews} 則評價</span>}
             </div>
 
             <div className="mt-6 bg-white rounded-xl p-5 border border-promo/30">
-              <div className="text-promo text-xs font-medium">母親節限定回饋</div>
+              {p.originalPrice > p.price && (
+                <div className="text-promo text-xs font-medium">限定回饋</div>
+              )}
               <div className="mt-1 flex items-end gap-3">
-                <div className="text-ink-soft line-through">原價 ${p.originalPrice}</div>
-                <div className="text-promo text-3xl font-bold">最低 ${p.price}</div>
+                {p.originalPrice > p.price && (
+                  <div className="text-ink-soft line-through">原價 {p.originalPrice} 元</div>
+                )}
+                <div className="text-promo text-3xl font-bold">最低 {p.price} 元</div>
               </div>
             </div>
 
-            <ul className="mt-6 space-y-2 text-sm text-ink-mid">
-              {p.highlights.map((h) => (
-                <li key={h} className="flex items-start gap-2">
-                  <Check size={18} className="text-brand-bright shrink-0 mt-0.5" /> {h}
-                </li>
-              ))}
-            </ul>
+            {p.highlights.length > 0 && (
+              <ul className="mt-6 space-y-2 text-sm text-ink-mid">
+                {p.highlights.map((h) => (
+                  <li key={h} className="flex items-start gap-2">
+                    <Check size={18} className="text-brand-bright shrink-0 mt-0.5" /> {h}
+                  </li>
+                ))}
+              </ul>
+            )}
 
-            <div className="mt-6 flex flex-col sm:flex-row gap-3">
-              <button className="flex-1 bg-promo text-white rounded-full py-3 font-medium hover:bg-pink-700 transition">
-                立即搶購
-              </button>
-              <button className="flex-1 border border-brand-blue text-brand-blue rounded-full py-3 font-medium hover:bg-brand-blue hover:text-white transition">
-                加入購物車
-              </button>
+            <div className="mt-6">
+              <AddToCartButton variantId={p.variantId} productName={p.name} />
             </div>
 
             <div className="mt-6 grid grid-cols-3 gap-3 text-center text-xs text-ink-mid">
@@ -87,27 +92,40 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         <div className="container-x">
           <h2 className="section-title">產品介紹</h2>
           <div className="section-title-underline" />
-          <p className="mt-8 max-w-3xl mx-auto text-center text-ink-mid leading-8">
-            {p.description}
-          </p>
+          <div
+            className="mt-8 max-w-3xl mx-auto text-ink-mid leading-8 prose prose-sm md:prose [&_li]:list-disc [&_li]:ml-5 [&_p]:my-2"
+            dangerouslySetInnerHTML={{ __html: p.description }}
+          />
         </div>
       </section>
 
-      <section className="py-14 gradient-soft">
-        <div className="container-x">
-          <h2 className="section-title">國際大廠原料</h2>
-          <div className="section-title-underline" />
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {p.ingredients.map((i) => (
-              <div key={i.name} className="bg-white rounded-2xl shadow-card p-6 text-center">
-                <div className="text-brand-bright font-bold text-lg">{i.brand}</div>
-                <div className="mt-2 text-ink-dark font-medium">{i.name}</div>
-                <p className="mt-3 text-sm text-ink-mid">{i.desc}</p>
-              </div>
-            ))}
+      {p.detailImage && (
+        <section className="py-10 bg-cream">
+          <div className="container-x max-w-3xl">
+            <img src={p.detailImage} alt={`${p.name} 詳情`} className="w-full rounded-2xl shadow-card" />
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {p.ingredients.length > 0 && (
+        <section className="py-14 gradient-soft">
+          <div className="container-x">
+            <h2 className="section-title">國際大廠原料</h2>
+            <div className="section-title-underline" />
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+              {p.ingredients.map((i) => (
+                <div key={i.name} className="bg-white rounded-2xl shadow-card p-6 text-center">
+                  <div className="text-brand-bright font-bold text-lg">{i.brand}</div>
+                  <div className="mt-2 text-ink-dark font-medium">{i.name}</div>
+                  <p className="mt-3 text-sm text-ink-mid">{i.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <ReviewSection slug={p.slug} />
 
       <section className="py-14 bg-white">
         <div className="container-x">

@@ -28,8 +28,8 @@ export default function ProductCard({ p }: { p: Product }) {
           <span>{p.reviews} 則評價</span>
         </div>
         <div className="mt-3 text-sm">
-          <div className="text-ink-soft line-through">原價 ${p.originalPrice}</div>
-          <div className="text-promo font-bold text-lg">最低 ${p.price}</div>
+          <div className="text-ink-soft line-through">原價 {p.originalPrice} 元</div>
+          <div className="text-promo font-bold text-lg">最低 {p.price} 元</div>
         </div>
         <Link
           href={`/products/${p.slug}`}

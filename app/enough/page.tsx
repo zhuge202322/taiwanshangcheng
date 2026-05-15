@@ -3,7 +3,7 @@ import { ChevronRight, Check } from 'lucide-react';
 import ProductNavGrid from '@/components/ProductNavGrid';
 import { productRefs, enoughByProduct } from '@/lib/pageData';
 
-export const metadata = { title: '足量強效配方 - 配方時代' };
+export const metadata = { title: '足量強效配方 - 萃活世家' };
 
 export default function EnoughPage() {
   return (

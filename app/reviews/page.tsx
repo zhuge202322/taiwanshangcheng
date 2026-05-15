@@ -3,7 +3,7 @@ import { ChevronRight, Star, Quote } from 'lucide-react';
 import HeroBanner from '@/components/HeroBanner';
 import { reviewBlocks, reviewProductNav } from '@/lib/reviewsData';
 
-export const metadata = { title: '使用者真實回饋 - 配方時代' };
+export const metadata = { title: '使用者真實回饋 - 萃活世家' };
 
 export default function ReviewsPage() {
   return (
@@ -21,7 +21,7 @@ export default function ReviewsPage() {
           <p className="mt-4 text-ink-mid">多年來，我們已經累積了</p>
           <h1 className="mt-2 text-4xl md:text-6xl font-bold text-brand-blue">上萬則好評</h1>
           <h2 className="mt-10 text-2xl md:text-4xl font-medium text-brand-navy">
-            配方時代使用者 好評回饋
+            萃活世家使用者 好評回饋
           </h2>
           <div className="section-title-underline" />
         </div>

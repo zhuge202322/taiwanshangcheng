@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 import ProductNavGrid from '@/components/ProductNavGrid';
 import { productRefs, materialsByProduct, materialsFallback } from '@/lib/pageData';
 
-export const metadata = { title: '國際頂級原料 - 配方時代' };
+export const metadata = { title: '國際頂級原料 - 萃活世家' };
 
 export default function MaterialsPage() {
   return (
@@ -26,7 +26,7 @@ export default function MaterialsPage() {
       <section className="py-14 md:py-16 bg-white">
         <div className="container-x max-w-3xl text-ink-mid leading-8">
           <p>
-            配方時代選擇採用國際大廠生產的原料，主要是因為這些廠商在業界擁有高度的聲譽和信任。製造商進行了多項嚴格的實驗，並在各種專業期刊上發表了相關研究成果，因為通過各項嚴格檢驗及各種實驗，因此<strong className="text-ink-dark">代表著最高品質和安全標準</strong>。
+            萃活世家選擇採用國際大廠生產的原料，主要是因為這些廠商在業界擁有高度的聲譽和信任。製造商進行了多項嚴格的實驗，並在各種專業期刊上發表了相關研究成果，因為通過各項嚴格檢驗及各種實驗，因此<strong className="text-ink-dark">代表著最高品質和安全標準</strong>。
           </p>
           <p className="mt-6">
             國際大廠原料不僅僅是一種產品成分，更是對品質的承諾和對消費者健康的負責。這些原料具有完整的證明文件，並且在市場上享有良好的口碑和廣泛的認可。因此，我們相信使用國際頂級原料是確保我們產品品質和安全性的最佳選擇。
